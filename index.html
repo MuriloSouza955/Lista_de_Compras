@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="bg-primary">
+    <div class="container">
+        <header>
+            <img src="assets/logo.svg" alt="Logo da quicklisst"> 
+        </header>
+        <main>
+            <a href="#home"><img src="assets/icons/Voltar.svg" alt="Voltar" id="voltar"></a>
+            <h1 id="title">Compras da semana</h1>
+            <form id="form">
+                <input type="text" id="item" placeholder="Adicione um  novo item" required>
+                <button type="submit">Adicionar item</button>
+               
+                <ul id="lista">
+                    <li>
+                        <div class="item">
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox">Arroz</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox">Feijão</label>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
