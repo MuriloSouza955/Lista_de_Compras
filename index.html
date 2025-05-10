@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body class="bg-primary">
+    <script src="js/script.js" defer></script>
     <div class="container">
       <header>
         <img src="assets/logo.svg" alt="Logo da quicklisst" />
@@ -25,28 +26,13 @@
         <form id="form">
           <input
             type="text"
+            name="item"
             id="item"
             placeholder="Adicione um  novo item"
             required
           />
           <button type="submit">Adicionar item</button>
-
-          <ul id="lista">
-            <li>
-              <div class="item">
-                <input type="checkbox" id="checkbox" />
-                <label for="checkbox">Arroz</label>
-                <a><img src="assets/icons/lixeira.svg" alt="Remover"></a>
-              </div>
-            </li>
-            <li>
-              <div class="item">
-                <input type="checkbox" id="checkbox" />
-                <label for="checkbox">Feijão</label>
-                <a><img src="assets/icons/lixeira.svg" alt="Remover"></a>
-              </div>
-            </li>
-          </ul>
+          <ul id="lista"></ul>
         </form>
       </main>
     </div>
